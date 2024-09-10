@@ -17,7 +17,9 @@ const useStyles = createStyles((theme, params: { canClose?: boolean }) => ({
     height: 'auto',
     textAlign: 'center',
     justifyContent: 'center',
+    background: 'rgb(186, 81, 84)',
     padding: 2,
+    clipPath: 'polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%)',
   },
   root: {
     border: 'none',

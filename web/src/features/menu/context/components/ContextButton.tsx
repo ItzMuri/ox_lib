@@ -21,16 +21,26 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
   },
   label: {
     width: '100%',
-    color: params.disabled ? theme.colors.dark[3] : theme.colors.dark[0],
+    color: 'white',
     whiteSpace: 'pre-wrap',
   },
   button: {
     height: 'fit-content',
     width: '100%',
+    background: 'radial-gradient(circle, rgba(114, 113, 113, 0.493) 0%, rgba(77, 79, 87, 0.877) 100%)',
+    borderRadius:'3',
+    border: '0.11rem solid rgba(110, 110, 119, 0.925)',
     padding: 10,
+    
     '&:hover': {
-      backgroundColor: params.readOnly ? theme.colors.dark[6] : undefined,
+      background: 'radial-gradient(circle, rgba(74, 94, 38, 0.084) 0%, rgba(61, 79, 31, 0.956) 100%)',
+      opacity:'0.8',
       cursor: params.readOnly ? 'unset' : 'pointer',
+      transition: 'background-color 0.5s ease',
+    },
+    '&:disabled': {
+      background: 'radial-gradient(circle, rgba(133, 58, 59, 0.019) 0%, rgba(105,46,47, 0.677) 100%)',
+      border: 'calc(0.092592592vh * 1.4) solid rgba(255, 255, 255, 0.15)',
     },
     '&:active': {
       transform: params.readOnly ? 'unset' : undefined,
@@ -40,16 +50,16 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
     maxWidth: '25px',
   },
   description: {
-    color: params.disabled ? theme.colors.dark[3] : theme.colors.dark[2],
+    color: params.disabled ? theme.colors.dark[0] : theme.colors.dark[2],
     fontSize: 12,
   },
   dropdown: {
-    padding: 10,
-    color: theme.colors.dark[0],
+    padding: 13,
+    background: 'radial-gradient(circle, rgba(114, 113, 113, 0.493) 0%, rgba(77, 79, 87, 0.877) 100%)',
+    border: '1px solid rgb(128, 128, 128)',
     fontSize: 14,
     maxWidth: 256,
     width: 'fit-content',
-    border: 'none',
   },
   buttonStack: {
     gap: 4,
