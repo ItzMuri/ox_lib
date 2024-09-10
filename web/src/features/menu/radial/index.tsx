@@ -17,7 +17,7 @@ const useStyles = createStyles((theme) => ({
   sector: {
     fill: 'rgba(114, 113, 113, 0.493)',
     color: 'white',
-    stroke: 'rgba(110, 110, 119, 0.925)',
+    
     strokeWidth: 0.5,
     '&:hover': {
         fill: '#5a9b009f',
