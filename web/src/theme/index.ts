@@ -8,7 +8,7 @@ export const theme: MantineThemeOverride = {
     Modal: {
       styles: {
         modal: {
-          background: 'radial-gradient(circle, rgba(114, 113, 113, 0.493) 0%, rgba(77, 79, 87, 0.877) 100%)',
+          background: 'radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(72, 72, 86, 0.877) 100%)',
           border:'solid 0.11rem rgba(110, 110, 119, 0.925)',
         },
       },
@@ -35,7 +35,6 @@ export const theme: MantineThemeOverride = {
     Select: {
       styles: {
         input: {
-          
           background: 'radial-gradient(83.87% 1043.26% at 50% 50%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%)',
           border:'solid 0.11rem rgba(110, 110, 119, 0.925)',
         },
@@ -55,7 +54,6 @@ export const theme: MantineThemeOverride = {
     NumberInput: {
       styles: {
         input: {
-          
           background: 'radial-gradient(83.87% 1043.26% at 50% 50%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%)',
           border:'solid 0.11rem rgba(110, 110, 119, 0.925)',
         },
@@ -81,12 +79,21 @@ export const theme: MantineThemeOverride = {
           border:'solid 0.11rem rgba(110, 110, 119, 0.925)',
         },
         icon: {
-          backgroundColor: '#82c91e',
+          backgroundColor: '#0099ad',
           border:'solid 0.11rem rgba(110, 110, 119, 0.925)',
           color:'white',
         },
       },
     },
 
+    Button: {
+      styles: {
+        root: {
+          color:'white',
+          backgroundColor: '#0099ad',
+          border:'solid 0.11rem rgba(110, 110, 119, 0.925)',
+        },
+      },
+    },
   },
 };

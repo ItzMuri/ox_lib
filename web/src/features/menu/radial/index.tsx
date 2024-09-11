@@ -17,11 +17,11 @@ const useStyles = createStyles((theme) => ({
     transform: 'translate(-50%, -50%)',
   },
   sector: {
-    fill: 'rgba(114, 113, 113, 0.493)',
-    color: 'white',
-    strokeWidth: 0.5,
+    fill: 'rgba(38, 43, 49, 0.671)',
+    color: '#0099ad',
+
     '&:hover': {
-        fill: '#5a9b009f',
+        fill: '#0099ad',
         transition: 'fill 0.5s ease',
       '> g > text, > g > svg > path': {
         fill: '#fff',
@@ -39,10 +39,10 @@ const useStyles = createStyles((theme) => ({
   centerCircle: {
     fill: 'rgb(38, 43, 49)',
     color: '#fff',
-    stroke: '#5a9b009f',
+    stroke: '#0099ad',
     strokeWidth: 1,
     '&:hover': {
-      fill: '#5a9b009f',
+      fill: '#0099ad',
     },
   },
   centerIconContainer: {
@@ -171,7 +171,7 @@ const RadialMenu: React.FC = () => {
                     <path
                       d={`M175.01,175.01 l${175 - gap},0 A175.01,175.01 0 0,0 ${
                         175 + (175 - gap) * Math.cos(-degToRad(pieAngle))
-                      }, ${175 + (150 - gap) * Math.sin(-degToRad(pieAngle))} z`}
+                      }, ${175 + (175 - gap) * Math.sin(-degToRad(pieAngle))} z`}
                     />
                     <g transform={`rotate(${index * pieAngle - 90} ${iconX} ${iconY})`} pointerEvents="none">
                       {typeof item.icon === 'string' && isIconUrl(item.icon) ? (
