@@ -8,11 +8,12 @@ export const debugRadial = () => {
       data: {
         items: [
           { icon: 'palette', label: 'Paint' },
-          { iconWidth: 35, iconHeight: 35, icon: 'https://icon-library.com/images/white-icon-png/white-icon-png-18.jpg', label: 'External icon'},
+          { iconWidth: 35, iconHeight: 35, icon: 'https://avatars.githubusercontent.com/u/99291234?s=200&v=4', label: 'External icon'},
           { icon: 'warehouse', label: 'Garage' },
-          { icon: 'palette', label: 'Quite long  \ntext' },
+          { icon: 'palette', label: 'Quite Long Text' },
+          { icon: 'palette', label: 'Fahrzeuginteraktionen' },
+          { icon: 'palette', label: 'Fahrzeuginteraktionen' },
           { icon: 'palette', label: 'Paint' },
-          { icon: 'warehouse', label: 'Garage' },
         ],
       },
     },
