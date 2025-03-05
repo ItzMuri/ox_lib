@@ -21,16 +21,22 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
   },
   label: {
     width: '100%',
-    color: params.disabled ? theme.colors.dark[3] : theme.colors.dark[0],
+    color: 'white',
     whiteSpace: 'pre-wrap',
   },
   button: {
     height: 'fit-content',
     width: '100%',
     padding: 10,
+    border: '1px solid #0099ad',
     '&:hover': {
-      backgroundColor: params.readOnly ? theme.colors.dark[6] : undefined,
+      boxShadow: 'inset 0px 0px 90px #0099ad',
       cursor: params.readOnly ? 'unset' : 'pointer',
+    },
+    '&:disabled': {
+      color: 'white',
+      background: 'radial-gradient(rgba(70, 19, 12, 0.8) 0%,rgba(112, 45, 45) 100%);',
+      border: 'calc(0.092592592vh * 1.4) solid rgba(255, 255, 255, 0.15)',
     },
     '&:active': {
       transform: params.readOnly ? 'unset' : undefined,
@@ -40,7 +46,7 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
     maxWidth: '25px',
   },
   description: {
-    color: params.disabled ? theme.colors.dark[3] : theme.colors.dark[2],
+    color: params.disabled ? theme.colors.dark[0] : 'white',
     fontSize: 12,
   },
   dropdown: {
