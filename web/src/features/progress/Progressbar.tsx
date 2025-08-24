@@ -115,7 +115,7 @@ const Progressbar: React.FC = () => {
         <ScaleFade visible={visible} onExitComplete={() => fetchNui('progressComplete')}>
           <Box className={classes.labelWrapper}>
             <Text className={classes.label}>{label}</Text>
-            <Text className={classes.value}>{Math.round((timeLeft / (duration / 1000)) * 100)}%</Text>
+            <Text className={classes.value}>{Math.round(100 - (timeLeft / (duration / 1000)) * 100)}%</Text>
           </Box>
           <Box className={classes.container}>
             <Box
