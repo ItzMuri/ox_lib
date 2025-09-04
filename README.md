@@ -1,6 +1,5 @@
 # ox_lib
 ![Screenshot 2025-03-06 005930](https://github.com/user-attachments/assets/e30da508-ed8e-4f1b-99b8-5628d3c3ad0e)
-![Screenshot 2025-03-06 014442](https://github.com/user-attachments/assets/eddd91ae-da69-4754-b6fd-9b99d84395be)
 
 ![Screenshot 2025-03-07 213855](https://github.com/user-attachments/assets/aa708a0d-0f2d-4d36-a882-9f8fb1f63ea8)
 and resource implementing reusable modules, methods, and UI elements.
